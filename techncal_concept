@@ -1,0 +1,48 @@
+GENERAL
+-------
+- responsive versus mobile version? bootstrap?
+- SEO (URLs, meta tags, content, semantic markup, tag cloud)
+- Social Media Logins (Facebook Connect, later Twitter and more)
+- use profile data from social media
+- 
+
+
+RESTAURANT ENTITY
+-----------------
+
+questions:
+- which categories?
+- when to use tags?
+
+fields:
+- name
+- longitude
+- latitude
+
+relations:
+
+
+RESTAURANT LOCATION ENTITY
+
+questions:
+- are the menus bound to restaurant locations or restaurants themselves? Could be that different locations have different offerings
+
+
+
+MENU ENTITY
+-----------
+
+questions:
+- what kind of data do we have?
+
+
+functionalities:
+- social sharing (what to share?)
+
+
+fields:
+- title (?)
+- restaurant_id
+
+relatons:
+- has one restaurant
