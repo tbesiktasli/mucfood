@@ -4,7 +4,7 @@ GENERAL
 - SEO (URLs, meta tags, content, semantic markup, tag cloud)
 - Social Media Logins (Facebook Connect, later Twitter and more)
 - use profile data from social media
-- 
+- multi language prepared (slugs, texts, categories, tags etc)
 
 
 RESTAURANT ENTITY
@@ -12,17 +12,20 @@ RESTAURANT ENTITY
 
 questions:
 - which categories?
-- when to use tags?
+- when to use tags? which tags?
+- possible categories: "fast food", breakfast, asian, bakery, vegan, vegeterian
+- possible tags: fat, gluteinfrei
 
 fields:
 - name
 - longitude
 - latitude
+- manager (if manager user is assigned then comminity cannot change details of restaurant (incl. menus etc) anymore, could be owner of restaurant)
 
 relations:
 
 
-RESTAURANT LOCATION ENTITY
+RESTAURANT LOCATION ENTITY (maybe obsolete. Could be done by "many menus per restaurant, and each menu has a location?")
 
 questions:
 - are the menus bound to restaurant locations or restaurants themselves? Could be that different locations have different offerings
@@ -33,7 +36,8 @@ MENU ENTITY
 -----------
 
 questions:
-- what kind of data do we have?
+- what kind of data do we have? check menus
+- how to take into account different locations?
 
 
 functionalities:
@@ -46,3 +50,17 @@ fields:
 
 relatons:
 - has one restaurant
+
+
+
+INGREDIENT ENTITY
+-----------------
+
+questions:
+- what to achieve?
+- site shall give nutrition advices
+- do not need detailed ingredients information
+
+
+fields:
+- 
